@@ -93,6 +93,7 @@ Ext.define('KitchenSink.view.Navigation', {
                     { id: 'contact-form', text: 'Contact Form', leaf: true },
                     { id: 'register-form', text: 'Register Form', leaf: true  },
                     { id: 'form-number', text: 'Number Field', leaf: true },
+                    { id: 'form-date', text: 'Date/Month Picker', leaf: true },
                     { id: 'form-checkout', text: 'Checkout Form', leaf: true },
                     { id: 'form-grid', text: 'Form with Grid', leaf: true }
                 ]

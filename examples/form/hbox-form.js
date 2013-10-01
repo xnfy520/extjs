@@ -7,7 +7,7 @@ Ext.onReady(function() {
     Ext.create('Ext.form.Panel', {
         renderTo: Ext.getBody(),
         title: 'Form Panel',
-        bodyStyle: 'padding:5px 5px 0',
+        bodyPadding: '5 5 0',
         width: 600,
         fieldDefaults: {
             labelAlign: 'top',

@@ -1,5 +1,5 @@
 Ext.define('KitchenSink.model.tree.Task', {
-    extend: 'Ext.data.Model',
+    extend: 'Ext.data.TreeModel',
     fields: [{
         name: 'task',
         type: 'string'

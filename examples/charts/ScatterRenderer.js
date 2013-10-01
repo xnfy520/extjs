@@ -1,5 +1,10 @@
-Ext.require('Ext.chart.*');
-Ext.require(['Ext.Window', 'Ext.fx.target.Sprite', 'Ext.layout.container.Fit', 'Ext.window.MessageBox']);
+Ext.require([
+    'Ext.chart.*',
+    'Ext.Window', 
+    'Ext.fx.target.Sprite', 
+    'Ext.layout.container.Fit', 
+    'Ext.window.MessageBox'
+]);
 
 var Renderers = {};
 

@@ -15,8 +15,8 @@ Ext.Loader.addClassPathMappings({
   "Ext.ComponentLoader": "../../../platform/src/ComponentLoader.js",
   "Ext.util.Queue": "../../../platform/src/util/Queue.js",
   "Ext": "../../src",
-  "Ext.chart": "../../../platform/src/chart",
   "Ext.layout.ClassList": "../../../platform/src/layout/ClassList.js",
+  "Ext.chart": "../../../platform/src/chart",
   "Ext.ux": "../ux",
   "Ext.fx": "../../../platform/src/fx",
   "Ext.util.Sorter": "../../../platform/src/util/Sorter.js",
@@ -36,8 +36,8 @@ Ext.Loader.addClassPathMappings({
   "Ext.rtl.AbstractComponent": "../../../platform/src/rtl/AbstractComponent.js",
   "Ext.rtl.EventObjectImpl": "../../../platform/src/rtl/EventObject.js",
   "Ext.util.Point": "../../../platform/src/util/Point.js",
-  "Ext.util.Sortable": "../../../platform/src/util/Sortable.js",
   "Ext.selection.Model": "../../../platform/src/selection/Model.js",
+  "Ext.util.Sortable": "../../../platform/src/util/Sortable.js",
   "Ext.layout.SizeModel": "../../../platform/src/layout/SizeModel.js",
   "Ext.util.Offset": "../../../platform/src/util/Offset.js",
   "Ext.panel.AbstractPanel": "../../../platform/src/panel/AbstractPanel.js",
@@ -94,6 +94,7 @@ Ext.ClassManager.addNameAlternateMappings({
     "Ext.ux.Multiselect"
   ],
   "KitchenSink.view.button.SplitButtons": [],
+  "KitchenSink.view.form.Date": [],
   "ExtThemeNeptune.grid.column.RowNumberer": [],
   "KitchenSink.view.button.ToggleButtons": [],
   "KitchenSink.view.DescriptionPanel": [],
@@ -273,6 +274,9 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "KitchenSink.view.button.SplitButtons": [
     "widget.split-buttons"
+  ],
+  "KitchenSink.view.form.Date": [
+    "widget.form-date"
   ],
   "ExtThemeNeptune.grid.column.RowNumberer": [],
   "KitchenSink.view.button.ToggleButtons": [

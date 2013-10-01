@@ -1,53 +1,59 @@
-Ext.require('Ext.chart.*');
-Ext.require(['Ext.Window', 'Ext.fx.target.Sprite', 'Ext.layout.container.Fit', 'Ext.window.MessageBox']);
+Ext.require([
+    'Ext.chart.*',
+    'Ext.Window', 
+    'Ext.fx.target.Sprite', 
+    'Ext.layout.container.Fit', 
+    'Ext.window.MessageBox'
+]);
 
 Ext.onReady(function () {
     
     var chart = Ext.create('Ext.chart.Chart', {
-            style: 'background:#fff',
-            animate: true,
-            store: store1,
-            legend: {
-                position: 'bottom'
+        style: 'background:#fff',
+        animate: true,
+        store: store1,
+        legend: {
+            position: 'bottom'
+        },
+        axes: [{
+            type: 'Numeric',
+            position: 'left',
+            fields: ['data1', 'data2', 'data3', 'data4', 'data5', 'data6', 'data7'],
+            title: 'Number of Hits',
+            grid: {
+                odd: {
+                    opacity: 1,
+                    fill: '#ddd',
+                    stroke: '#bbb',
+                    'stroke-width': 1
+                }
             },
-            axes: [{
-                type: 'Numeric',
-                position: 'left',
-                fields: ['data1', 'data2', 'data3', 'data4', 'data5', 'data6', 'data7'],
-                title: 'Number of Hits',
-                grid: {
-                    odd: {
-                        opacity: 1,
-                        fill: '#ddd',
-                        stroke: '#bbb',
-                        'stroke-width': 1
-                    }
-                },
-                minimum: 0,
-                adjustMinimumByMajorUnit: 0
-            }, {
-                type: 'Category',
-                position: 'bottom',
-                fields: ['name'],
-                title: 'Month of the Year',
-                grid: true,
-                label: {
-                    rotate: {
-                        degrees: 315
-                    }
+            minimum: 0,
+            adjustMinimumByMajorUnit: 0
+        }, {
+            type: 'Category',
+            position: 'bottom',
+            fields: ['name'],
+            title: 'Month of the Year',
+            grid: true,
+            label: {
+                rotate: {
+                    degrees: 315
                 }
-            }],
-            series: [{
-                type: 'area',
-                highlight: false,
-                axis: 'left',
-                xField: 'name',
-                yField: ['data1', 'data2', 'data3', 'data4', 'data5', 'data6', 'data7'],
-                style: {
-                    opacity: 0.93
-                }
-            }]
-        });
+            }
+        }],
+        series: [{
+            type: 'area',
+            highlight: false,
+            axis: 'left',
+            xField: 'name',
+            yField: ['data1', 'data2', 'data3', 'data4', 'data5', 'data6', 'data7'],
+            style: {
+                opacity: 0.93
+            }
+        }]
+    }); 
+
     
     var win = Ext.create('Ext.window.Window', {
         width: 800,

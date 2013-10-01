@@ -5,531 +5,538 @@
  * metadata-driven class system features 
  */
 Ext.Loader.addClassPathMappings({
-  "Ext.Queryable": "../../../../../platform/src/Queryable.js",
-  "Ext.util.Renderable": "../../../../../platform/src/util/Renderable.js",
-  "Ext.util.Bindable": "../../../../../platform/src/util/Bindable.js",
-  "Ext.state": "../../../../../platform/src/state",
-  "Ext.layout.component.Auto": "../../../../../platform/src/layout/component/Auto.js",
-  "Ext.util.HashMap": "../../../../../platform/src/util/HashMap.js",
-  "Ext.container.AbstractContainer": "../../../../../platform/src/container/AbstractContainer.js",
-  "Ext.ComponentLoader": "../../../../../platform/src/ComponentLoader.js",
-  "Ext.util.Queue": "../../../../../platform/src/util/Queue.js",
+  " Ext.Msg": "../../../../src/window/MessageBox.js",
   "Ext": "../../../../src",
-  "Ext.layout.ClassList": "../../../../../platform/src/layout/ClassList.js",
-  "Ext.chart": "../../../../../platform/src/chart",
-  "Ext.ux": "../../../ux",
-  "Ext.fx": "../../../../../platform/src/fx",
-  "Ext.util.Sorter": "../../../../../platform/src/util/Sorter.js",
-  "Ext.util.Inflector": "../../../../../platform/src/util/Inflector.js",
-  "Ext.direct": "../../../../../platform/src/direct",
-  "Ext.PluginManager": "../../../../../platform/src/PluginManager.js",
-  "Ext.rtl.util.Floating": "../../../../src/rtl/util/Floating.js",
-  "Ext.data": "../../../../../platform/src/data",
-  "Ext.Ajax": "../../../../../platform/src/Ajax.js",
-  "Ext.util.Grouper": "../../../../../platform/src/util/Grouper.js",
-  "Ext.util.ProtoElement": "../../../../../platform/src/util/ProtoElement.js",
-  "Ext.layout.component.Component": "../../../../../platform/src/layout/component/Component.js",
-  "Ext.container.DockingContainer": "../../../../../platform/src/container/DockingContainer.js",
-  "Ext.util.Filter": "../../../../../platform/src/util/Filter.js",
-  "Ext.selection.DataViewModel": "../../../../../platform/src/selection/DataViewModel.js",
+  "Ext.AbstractComponent": "../../../../../platform/src/AbstractComponent.js",
   "Ext.AbstractManager": "../../../../../platform/src/AbstractManager.js",
-  "Ext.rtl.AbstractComponent": "../../../../../platform/src/rtl/AbstractComponent.js",
-  "Ext.rtl.EventObjectImpl": "../../../../../platform/src/rtl/EventObject.js",
-  "Ext.util.Point": "../../../../../platform/src/util/Point.js",
-  "Ext.selection.Model": "../../../../../platform/src/selection/Model.js",
-  "Ext.util.Sortable": "../../../../../platform/src/util/Sortable.js",
-  "Ext.layout.SizeModel": "../../../../../platform/src/layout/SizeModel.js",
-  "Ext.util.Offset": "../../../../../platform/src/util/Offset.js",
-  "Ext.panel.AbstractPanel": "../../../../../platform/src/panel/AbstractPanel.js",
-  "Ext.util.Memento": "../../../../../platform/src/util/Memento.js",
-  "ExtThemeNeptune": "../../../../../packages/ext-theme-neptune/overrides",
-  "Ext.layout.Layout": "../../../../../platform/src/layout/Layout.js",
-  "Ext.util.ElementContainer": "../../../../../platform/src/util/ElementContainer.js",
+  "Ext.AbstractPlugin": "../../../../../platform/src/AbstractPlugin.js",
+  "Ext.Ajax": "../../../../../platform/src/Ajax.js",
+  "Ext.ComponentLoader": "../../../../../platform/src/ComponentLoader.js",
   "Ext.ComponentManager": "../../../../../platform/src/ComponentManager.js",
   "Ext.ComponentQuery": "../../../../../platform/src/ComponentQuery.js",
-  "Ext.layout.container.Auto": "../../../../../platform/src/layout/container/Auto.js",
-  "Ext.util.AbstractMixedCollection": "../../../../../platform/src/util/AbstractMixedCollection.js",
-  "Ext.layout.Context": "../../../../../platform/src/layout/Context.js",
-  "Ext.draw": "../../../../../platform/src/draw",
-  "Ext.AbstractComponent": "../../../../../platform/src/AbstractComponent.js",
-  " Ext.Msg": "../../../../src/window/MessageBox.js",
-  "Ext.layout.ContextItem": "../../../../../platform/src/layout/ContextItem.js",
-  "KitchenSink": "../../app",
-  "Ext.diag": "../../../../../platform/src/diag",
-  "Ext.ModelManager": "../../../../../platform/src/ModelManager.js",
-  "Ext.view.AbstractView": "../../../../../platform/src/view/AbstractView.js",
-  "Ext.rtl.util": "../../../../../platform/src/rtl/util",
-  "Ext.util.Region": "../../../../../platform/src/util/Region.js",
-  "Ext.layout.SizePolicy": "../../../../../platform/src/layout/SizePolicy.js",
   "Ext.ElementLoader": "../../../../../platform/src/ElementLoader.js",
+  "Ext.ModelManager": "../../../../../platform/src/ModelManager.js",
+  "Ext.PluginManager": "../../../../../platform/src/PluginManager.js",
+  "Ext.Queryable": "../../../../../platform/src/Queryable.js",
+  "Ext.chart": "../../../../../platform/src/chart",
+  "Ext.container.AbstractContainer": "../../../../../platform/src/container/AbstractContainer.js",
+  "Ext.container.DockingContainer": "../../../../../platform/src/container/DockingContainer.js",
+  "Ext.data": "../../../../../platform/src/data",
+  "Ext.diag": "../../../../../platform/src/diag",
+  "Ext.direct": "../../../../../platform/src/direct",
+  "Ext.draw": "../../../../../platform/src/draw",
+  "Ext.fx": "../../../../../platform/src/fx",
+  "Ext.layout.ClassList": "../../../../../platform/src/layout/ClassList.js",
+  "Ext.layout.Context": "../../../../../platform/src/layout/Context.js",
+  "Ext.layout.ContextItem": "../../../../../platform/src/layout/ContextItem.js",
+  "Ext.layout.Layout": "../../../../../platform/src/layout/Layout.js",
+  "Ext.layout.SizeModel": "../../../../../platform/src/layout/SizeModel.js",
+  "Ext.layout.SizePolicy": "../../../../../platform/src/layout/SizePolicy.js",
+  "Ext.layout.component.Auto": "../../../../../platform/src/layout/component/Auto.js",
+  "Ext.layout.component.Component": "../../../../../platform/src/layout/component/Component.js",
+  "Ext.layout.component.Draw": "../../../../../platform/src/layout/component/Draw.js",
+  "Ext.layout.container.Auto": "../../../../../platform/src/layout/container/Auto.js",
+  "Ext.panel.AbstractPanel": "../../../../../platform/src/panel/AbstractPanel.js",
+  "Ext.rtl.AbstractComponent": "../../../../../platform/src/rtl/AbstractComponent.js",
+  "Ext.rtl.EventObjectImpl": "../../../../../platform/src/rtl/EventObjectImpl.js",
+  "Ext.rtl.chart": "../../../../../platform/src/rtl/chart",
+  "Ext.rtl.draw": "../../../../../platform/src/rtl/draw",
+  "Ext.rtl.util": "../../../../../platform/src/rtl/util",
+  "Ext.rtl.util.Floating": "../../../../src/rtl/util/Floating.js",
+  "Ext.selection.DataViewModel": "../../../../../platform/src/selection/DataViewModel.js",
+  "Ext.selection.Model": "../../../../../platform/src/selection/Model.js",
+  "Ext.state": "../../../../../platform/src/state",
+  "Ext.util.AbstractMixedCollection": "../../../../../platform/src/util/AbstractMixedCollection.js",
+  "Ext.util.Bindable": "../../../../../platform/src/util/Bindable.js",
+  "Ext.util.ElementContainer": "../../../../../platform/src/util/ElementContainer.js",
+  "Ext.util.Filter": "../../../../../platform/src/util/Filter.js",
+  "Ext.util.Grouper": "../../../../../platform/src/util/Grouper.js",
+  "Ext.util.HashMap": "../../../../../platform/src/util/HashMap.js",
+  "Ext.util.Inflector": "../../../../../platform/src/util/Inflector.js",
+  "Ext.util.LocalStorage": "../../../../../platform/src/util/LocalStorage.js",
   "Ext.util.LruCache": "../../../../../platform/src/util/LruCache.js",
-  "Ext.AbstractPlugin": "../../../../../platform/src/AbstractPlugin.js",
+  "Ext.util.Memento": "../../../../../platform/src/util/Memento.js",
   "Ext.util.MixedCollection": "../../../../../platform/src/util/MixedCollection.js",
-  "Ext.layout.component.Draw": "../../../../../platform/src/layout/component/Draw.js"
+  "Ext.util.Offset": "../../../../../platform/src/util/Offset.js",
+  "Ext.util.Point": "../../../../../platform/src/util/Point.js",
+  "Ext.util.ProtoElement": "../../../../../platform/src/util/ProtoElement.js",
+  "Ext.util.Queue": "../../../../../platform/src/util/Queue.js",
+  "Ext.util.Region": "../../../../../platform/src/util/Region.js",
+  "Ext.util.Renderable": "../../../../../platform/src/util/Renderable.js",
+  "Ext.util.Sortable": "../../../../../platform/src/util/Sortable.js",
+  "Ext.util.Sorter": "../../../../../platform/src/util/Sorter.js",
+  "Ext.ux": "../../../ux",
+  "Ext.view.AbstractView": "../../../../../platform/src/view/AbstractView.js",
+  "ExtThemeNeptune": "../../../../../packages/ext-theme-neptune/overrides",
+  "KitchenSink": "../../app"
 });
 Ext.ClassManager.addNameAlternateMappings({
-  "ExtThemeNeptune.container.ButtonGroup": [],
-  "KitchenSink.view.Header": [],
-  "KitchenSink.view.window.BasicWindow": [],
-  "Ext.ux.grid.TransformGrid": [],
-  "Ext.ux.ajax.DataSimlet": [],
-  "KitchenSink.store.Restaurants": [],
-  "KitchenSink.store.Files": [],
-  "KitchenSink.view.button.RightTextButtons": [],
-  "ExtThemeNeptune.toolbar.Paging": [],
-  "KitchenSink.view.tab.BasicTabs": [],
-  "Ext.ux.event.Driver": [],
-  "Ext.ux.ajax.XmlSimlet": [],
-  "KitchenSink.view.ThemeSwitcher": [],
-  "KitchenSink.view.button.SplitBottomButtons": [],
-  "Ext.ux.DataView.DragSelector": [],
-  "KitchenSink.view.button.LinkButtons": [],
-  "KitchenSink.view.Navigation": [],
-  "KitchenSink.view.grid.PropertyGrid": [],
-  "KitchenSink.store.Companies": [],
-  "Ext.ux.grid.menu.ListMenu": [],
-  "KitchenSink.view.grid.GroupedHeaderGrid": [],
-  "KitchenSink.view.dd.GridToGrid": [],
-  "Ext.ux.form.MultiSelect": [
-    "Ext.ux.Multiselect"
-  ],
-  "KitchenSink.view.button.SplitButtons": [],
-  "ExtThemeNeptune.grid.column.RowNumberer": [],
-  "KitchenSink.view.button.ToggleButtons": [],
-  "KitchenSink.view.DescriptionPanel": [],
-  "Ext.ux.PreviewPlugin": [],
-  "KitchenSink.view.grid.Reconfigure": [],
-  "Ext.ux.ajax.SimXhr": [],
-  "Ext.ux.event.RecorderManager": [],
-  "Ext.ux.ProgressBarPager": [],
+  "Ext.ux.BoxReorderer": [],
   "Ext.ux.CellDragDrop": [],
-  "Ext.ux.ajax.Simlet": [],
-  "Ext.ux.SlidingPager": [],
-  "Ext.ux.TabReorderer": [],
-  "Ext.ux.grid.filter.NumericFilter": [],
-  "ExtThemeNeptune.panel.Table": [],
-  "Ext.ux.event.Recorder": [],
-  "KitchenSink.view.panel.FramedPanels": [],
-  "KitchenSink.view.form.ContactForm": [],
-  "Ext.ux.ajax.SimManager": [],
-  "Ext.ux.grid.filter.BooleanFilter": [],
-  "KitchenSink.view.tree.BasicTrees": [],
-  "KitchenSink.view.CodePreview": [],
-  "Ext.ux.TabScrollerMenu": [],
-  "ExtThemeNeptune.menu.Separator": [],
+  "Ext.ux.DataTip": [],
+  "Ext.ux.DataView.Animated": [],
+  "Ext.ux.DataView.DragSelector": [],
+  "Ext.ux.DataView.Draggable": [],
+  "Ext.ux.DataView.LabelEditor": [],
+  "Ext.ux.FieldReplicator": [],
+  "Ext.ux.GMapPanel": [],
+  "Ext.ux.GroupTabPanel": [],
+  "Ext.ux.GroupTabRenderer": [],
   "Ext.ux.IFrame": [],
-  "KitchenSink.controller.Main": [],
-  "KitchenSink.view.toolbar.DockedToolbars": [],
-  "KitchenSink.view.form.LoginForm": [],
-  "KitchenSink.view.tree.TreeGrid": [],
-  "KitchenSink.view.panel.BasicPanels": [],
-  "Ext.ux.form.SearchField": [],
-  "Ext.ux.dd.CellFieldDropZone": [],
   "Ext.ux.LiveSearchGridPanel": [],
-  "Ext.ux.grid.filter.DateFilter": [],
-  "KitchenSink.view.button.BasicButtons": [],
+  "Ext.ux.PreviewPlugin": [],
+  "Ext.ux.ProgressBarPager": [],
+  "Ext.ux.RowExpander": [],
+  "Ext.ux.SlidingPager": [],
+  "Ext.ux.Spotlight": [],
+  "Ext.ux.TabCloseMenu": [],
+  "Ext.ux.TabReorderer": [],
+  "Ext.ux.TabScrollerMenu": [],
+  "Ext.ux.ToolbarDroppable": [],
   "Ext.ux.TreePicker": [],
-  "KitchenSink.view.grid.GroupedGrid": [],
-  "ExtThemeNeptune.grid.RowEditor": [],
-  "ExtThemeNeptune.picker.Month": [],
-  "KitchenSink.model.dd.Simple": [],
+  "Ext.ux.ajax.DataSimlet": [],
+  "Ext.ux.ajax.JsonSimlet": [],
+  "Ext.ux.ajax.SimManager": [],
+  "Ext.ux.ajax.SimXhr": [],
+  "Ext.ux.ajax.Simlet": [],
+  "Ext.ux.ajax.XmlSimlet": [],
   "Ext.ux.data.PagingMemoryProxy": [
     "Ext.data.PagingMemoryProxy"
   ],
-  "KitchenSink.view.tab.FramedTabs": [],
-  "ExtThemeNeptune.menu.Menu": [],
-  "Ext.ux.BoxReorderer": [],
-  "KitchenSink.view.grid.RowExpander": [],
-  "Ext.ux.grid.filter.Filter": [],
-  "KitchenSink.view.dataview.MultiSortButton": [],
-  "Ext.ux.GroupTabRenderer": [],
-  "Ext.ux.FieldReplicator": [],
-  "KitchenSink.view.dd.GridToForm": [],
-  "Ext.ux.grid.filter.ListFilter": [],
-  "ExtThemeNeptune.panel.Panel": [],
-  "KitchenSink.view.form.Number": [],
-  "KitchenSink.view.tree.TwoTrees": [],
-  "KitchenSink.view.toolbar.BasicToolbar": [],
+  "Ext.ux.dd.CellFieldDropZone": [],
   "Ext.ux.dd.PanelFieldDragZone": [],
-  "KitchenSink.view.grid.LockingGrid": [],
-  "KitchenSink.view.tree.Reorder": [],
-  "ExtThemeNeptune.toolbar.Toolbar": [],
-  "KitchenSink.view.dd.FieldToGrid": [],
-  "ExtThemeNeptune.tab.Tab": [],
-  "KitchenSink.view.ContentPanel": [],
-  "KitchenSink.model.grid.Employee": [],
-  "Ext.ux.GMapPanel": [],
-  "KitchenSink.view.grid.SlidingPager": [],
-  "Ext.ux.GroupTabPanel": [],
-  "Ext.ux.DataView.LabelEditor": [],
-  "Ext.ux.grid.filter.StringFilter": [],
-  "Ext.ux.statusbar.ValidationStatus": [],
-  "KitchenSink.model.grid.Office": [],
-  "Ext.ux.layout.Center": [],
-  "KitchenSink.view.Viewport": [],
-  "KitchenSink.model.tree.Task": [],
-  "KitchenSink.data.BigData": [],
-  "Ext.ux.DataView.Animated": [],
-  "KitchenSink.store.BigData": [],
-  "ExtThemeNeptune.resizer.Splitter": [],
-  "KitchenSink.view.tab.IconTabs": [],
-  "Ext.ux.statusbar.StatusBar": [
-    "Ext.ux.StatusBar"
-  ],
-  "KitchenSink.view.tree.XmlTree": [],
-  "KitchenSink.view.button.LeftTextButtons": [],
-  "KitchenSink.view.grid.BigData": [],
-  "KitchenSink.model.grid.Plant": [],
-  "ExtThemeNeptune.layout.component.Dock": [],
-  "KitchenSink.view.slider.SliderField": [],
-  "KitchenSink.view.button.MenuBottomButtons": [],
-  "Ext.ux.grid.menu.RangeMenu": [],
-  "KitchenSink.store.States": [],
-  "Ext.ux.RowExpander": [],
-  "KitchenSink.data.DataSets": [],
-  "Ext.ux.event.Player": [],
-  "KitchenSink.model.State": [],
-  "ExtThemeNeptune.panel.Tool": [],
-  "KitchenSink.view.dataview.MultiSort": [],
-  "KitchenSink.view.form.Checkout": [],
-  "KitchenSink.view.layout.Accordion": [],
-  "Ext.ux.ToolbarDroppable": [],
+  "Ext.ux.event.Driver": [],
   "Ext.ux.event.Maker": [],
-  "KitchenSink.view.grid.ProgressBarPager": [],
-  "KitchenSink.view.form.FormGrid": [],
-  "KitchenSink.view.grid.ArrayGrid": [],
-  "Ext.ux.DataView.Draggable": [],
-  "KitchenSink.view.button.MenuButtons": [],
-  "KitchenSink.view.grid.MultipleSorting": [],
-  "KitchenSink.view.tree.CheckTree": [],
-  "Ext.ux.TabCloseMenu": [],
-  "KitchenSink.DummyText": [],
-  "Ext.ux.DataTip": [],
-  "Ext.ux.grid.filter.DateTimeFilter": [],
-  "KitchenSink.view.grid.CellEditing": [],
+  "Ext.ux.event.Player": [],
+  "Ext.ux.event.Recorder": [],
+  "Ext.ux.event.RecorderManager": [],
   "Ext.ux.form.ItemSelector": [
     "Ext.ux.ItemSelector"
   ],
-  "KitchenSink.view.tab.PlainTabs": [],
-  "KitchenSink.model.Company": [],
-  "Ext.ux.ajax.JsonSimlet": [],
-  "Ext.ux.Spotlight": [],
-  "ExtThemeNeptune.form.field.HtmlEditor": [],
+  "Ext.ux.form.MultiSelect": [
+    "Ext.ux.Multiselect"
+  ],
+  "Ext.ux.form.SearchField": [],
   "Ext.ux.grid.FiltersFeature": [],
+  "Ext.ux.grid.TransformGrid": [],
+  "Ext.ux.grid.filter.BooleanFilter": [],
+  "Ext.ux.grid.filter.DateFilter": [],
+  "Ext.ux.grid.filter.DateTimeFilter": [],
+  "Ext.ux.grid.filter.Filter": [],
+  "Ext.ux.grid.filter.ListFilter": [],
+  "Ext.ux.grid.filter.NumericFilter": [],
+  "Ext.ux.grid.filter.StringFilter": [],
+  "Ext.ux.grid.menu.ListMenu": [],
+  "Ext.ux.grid.menu.RangeMenu": [],
+  "Ext.ux.layout.Center": [],
+  "Ext.ux.statusbar.StatusBar": [
+    "Ext.ux.StatusBar"
+  ],
+  "Ext.ux.statusbar.ValidationStatus": [],
   "ExtThemeNeptune.Component": [],
+  "ExtThemeNeptune.container.ButtonGroup": [],
+  "ExtThemeNeptune.form.field.HtmlEditor": [],
+  "ExtThemeNeptune.grid.RowEditor": [],
+  "ExtThemeNeptune.grid.column.RowNumberer": [],
+  "ExtThemeNeptune.layout.component.Dock": [],
+  "ExtThemeNeptune.menu.Menu": [],
+  "ExtThemeNeptune.menu.Separator": [],
+  "ExtThemeNeptune.panel.Panel": [],
+  "ExtThemeNeptune.panel.Table": [],
+  "ExtThemeNeptune.panel.Tool": [],
+  "ExtThemeNeptune.picker.Month": [],
+  "ExtThemeNeptune.resizer.Splitter": [],
+  "ExtThemeNeptune.tab.Tab": [],
+  "ExtThemeNeptune.toolbar.Paging": [],
+  "ExtThemeNeptune.toolbar.Toolbar": [],
+  "KitchenSink.DummyText": [],
+  "KitchenSink.controller.Main": [],
+  "KitchenSink.data.BigData": [],
+  "KitchenSink.data.DataSets": [],
+  "KitchenSink.model.Company": [],
+  "KitchenSink.model.Restaurant": [],
+  "KitchenSink.model.State": [],
+  "KitchenSink.model.dd.Simple": [],
+  "KitchenSink.model.grid.Employee": [],
+  "KitchenSink.model.grid.Office": [],
+  "KitchenSink.model.grid.Plant": [],
+  "KitchenSink.model.tree.Task": [],
+  "KitchenSink.store.BigData": [],
+  "KitchenSink.store.Companies": [],
+  "KitchenSink.store.Files": [],
+  "KitchenSink.store.Restaurants": [],
+  "KitchenSink.store.States": [],
+  "KitchenSink.view.CodePreview": [],
+  "KitchenSink.view.ContentPanel": [],
+  "KitchenSink.view.DescriptionPanel": [],
+  "KitchenSink.view.Header": [],
+  "KitchenSink.view.Navigation": [],
+  "KitchenSink.view.ThemeSwitcher": [],
+  "KitchenSink.view.Viewport": [],
+  "KitchenSink.view.button.BasicButtons": [],
+  "KitchenSink.view.button.LeftTextButtons": [],
+  "KitchenSink.view.button.LinkButtons": [],
+  "KitchenSink.view.button.MenuBottomButtons": [],
+  "KitchenSink.view.button.MenuButtons": [],
+  "KitchenSink.view.button.RightTextButtons": [],
+  "KitchenSink.view.button.SplitBottomButtons": [],
+  "KitchenSink.view.button.SplitButtons": [],
+  "KitchenSink.view.button.ToggleButtons": [],
+  "KitchenSink.view.dataview.MultiSort": [],
+  "KitchenSink.view.dataview.MultiSortButton": [],
+  "KitchenSink.view.dd.FieldToGrid": [],
+  "KitchenSink.view.dd.GridToForm": [],
+  "KitchenSink.view.dd.GridToGrid": [],
+  "KitchenSink.view.form.Checkout": [],
+  "KitchenSink.view.form.ContactForm": [],
+  "KitchenSink.view.form.Date": [],
+  "KitchenSink.view.form.FormGrid": [],
+  "KitchenSink.view.form.LoginForm": [],
+  "KitchenSink.view.form.Number": [],
   "KitchenSink.view.form.RegisterForm": [],
-  "KitchenSink.model.Restaurant": []
+  "KitchenSink.view.grid.ArrayGrid": [],
+  "KitchenSink.view.grid.BigData": [],
+  "KitchenSink.view.grid.CellEditing": [],
+  "KitchenSink.view.grid.GroupedGrid": [],
+  "KitchenSink.view.grid.GroupedHeaderGrid": [],
+  "KitchenSink.view.grid.LockingGrid": [],
+  "KitchenSink.view.grid.MultipleSorting": [],
+  "KitchenSink.view.grid.ProgressBarPager": [],
+  "KitchenSink.view.grid.PropertyGrid": [],
+  "KitchenSink.view.grid.Reconfigure": [],
+  "KitchenSink.view.grid.RowExpander": [],
+  "KitchenSink.view.grid.SlidingPager": [],
+  "KitchenSink.view.layout.Accordion": [],
+  "KitchenSink.view.panel.BasicPanels": [],
+  "KitchenSink.view.panel.FramedPanels": [],
+  "KitchenSink.view.slider.SliderField": [],
+  "KitchenSink.view.tab.BasicTabs": [],
+  "KitchenSink.view.tab.FramedTabs": [],
+  "KitchenSink.view.tab.IconTabs": [],
+  "KitchenSink.view.tab.PlainTabs": [],
+  "KitchenSink.view.toolbar.BasicToolbar": [],
+  "KitchenSink.view.toolbar.DockedToolbars": [],
+  "KitchenSink.view.tree.BasicTrees": [],
+  "KitchenSink.view.tree.CheckTree": [],
+  "KitchenSink.view.tree.Reorder": [],
+  "KitchenSink.view.tree.TreeGrid": [],
+  "KitchenSink.view.tree.TwoTrees": [],
+  "KitchenSink.view.tree.XmlTree": [],
+  "KitchenSink.view.window.BasicWindow": []
 });
 Ext.ClassManager.addNameAliasMappings({
-  "ExtThemeNeptune.container.ButtonGroup": [],
-  "KitchenSink.view.Header": [
-    "widget.appHeader"
-  ],
-  "KitchenSink.view.window.BasicWindow": [
-    "widget.basic-window"
-  ],
-  "Ext.ux.grid.TransformGrid": [],
-  "Ext.ux.ajax.DataSimlet": [],
-  "KitchenSink.store.Restaurants": [],
-  "KitchenSink.store.Files": [],
-  "KitchenSink.view.button.RightTextButtons": [
-    "widget.right-text-buttons"
-  ],
-  "ExtThemeNeptune.toolbar.Paging": [],
-  "KitchenSink.view.tab.BasicTabs": [
-    "widget.basic-tabs"
-  ],
-  "Ext.ux.event.Driver": [],
-  "Ext.ux.ajax.XmlSimlet": [
-    "simlet.xml"
-  ],
-  "KitchenSink.view.ThemeSwitcher": [
-    "widget.themeSwitcher"
-  ],
-  "KitchenSink.view.button.SplitBottomButtons": [
-    "widget.split-bottom-buttons"
-  ],
-  "Ext.ux.DataView.DragSelector": [],
-  "KitchenSink.view.button.LinkButtons": [
-    "widget.link-buttons"
-  ],
-  "KitchenSink.view.Navigation": [
-    "widget.navigation"
-  ],
-  "KitchenSink.view.grid.PropertyGrid": [
-    "widget.property-grid"
-  ],
-  "KitchenSink.store.Companies": [],
-  "Ext.ux.grid.menu.ListMenu": [],
-  "KitchenSink.view.grid.GroupedHeaderGrid": [
-    "widget.grouped-header-grid"
-  ],
-  "KitchenSink.view.dd.GridToGrid": [
-    "widget.dd-grid-to-grid"
-  ],
-  "Ext.ux.form.MultiSelect": [
-    "widget.multiselect",
-    "widget.multiselectfield"
-  ],
-  "KitchenSink.view.button.SplitButtons": [
-    "widget.split-buttons"
-  ],
-  "ExtThemeNeptune.grid.column.RowNumberer": [],
-  "KitchenSink.view.button.ToggleButtons": [
-    "widget.toggle-buttons"
-  ],
-  "KitchenSink.view.DescriptionPanel": [
-    "widget.descriptionPanel"
-  ],
-  "Ext.ux.PreviewPlugin": [
-    "plugin.preview"
-  ],
-  "KitchenSink.view.grid.Reconfigure": [
-    "widget.reconfigure-grid"
-  ],
-  "Ext.ux.ajax.SimXhr": [],
-  "Ext.ux.event.RecorderManager": [
-    "widget.eventrecordermanager"
-  ],
-  "Ext.ux.ProgressBarPager": [],
+  "Ext.ux.BoxReorderer": [],
   "Ext.ux.CellDragDrop": [
     "plugin.celldragdrop"
   ],
-  "Ext.ux.ajax.Simlet": [
-    "simlet.basic"
+  "Ext.ux.DataTip": [
+    "plugin.datatip"
   ],
-  "Ext.ux.SlidingPager": [],
-  "Ext.ux.TabReorderer": [],
-  "Ext.ux.grid.filter.NumericFilter": [
-    "gridfilter.numeric"
-  ],
-  "ExtThemeNeptune.panel.Table": [],
-  "Ext.ux.event.Recorder": [],
-  "KitchenSink.view.panel.FramedPanels": [
-    "widget.framed-panels"
-  ],
-  "KitchenSink.view.form.ContactForm": [
-    "widget.contact-form"
-  ],
-  "Ext.ux.ajax.SimManager": [],
-  "Ext.ux.grid.filter.BooleanFilter": [
-    "gridfilter.boolean"
-  ],
-  "KitchenSink.view.tree.BasicTrees": [
-    "widget.basic-trees"
-  ],
-  "KitchenSink.view.CodePreview": [
-    "widget.codePreview"
-  ],
-  "Ext.ux.TabScrollerMenu": [
-    "plugin.tabscrollermenu"
-  ],
-  "ExtThemeNeptune.menu.Separator": [],
-  "Ext.ux.IFrame": [
-    "widget.uxiframe"
-  ],
-  "KitchenSink.controller.Main": [],
-  "KitchenSink.view.toolbar.DockedToolbars": [
-    "widget.docked-toolbars"
-  ],
-  "KitchenSink.view.form.LoginForm": [
-    "widget.login-form"
-  ],
-  "KitchenSink.view.tree.TreeGrid": [
-    "widget.tree-grid"
-  ],
-  "KitchenSink.view.panel.BasicPanels": [
-    "widget.basic-panels"
-  ],
-  "Ext.ux.form.SearchField": [
-    "widget.searchfield"
-  ],
-  "Ext.ux.dd.CellFieldDropZone": [],
-  "Ext.ux.LiveSearchGridPanel": [],
-  "Ext.ux.grid.filter.DateFilter": [
-    "gridfilter.date"
-  ],
-  "KitchenSink.view.button.BasicButtons": [
-    "widget.basic-buttons"
-  ],
-  "Ext.ux.TreePicker": [
-    "widget.treepicker"
-  ],
-  "KitchenSink.view.grid.GroupedGrid": [
-    "widget.grouped-grid"
-  ],
-  "ExtThemeNeptune.grid.RowEditor": [],
-  "ExtThemeNeptune.picker.Month": [],
-  "KitchenSink.model.dd.Simple": [],
-  "Ext.ux.data.PagingMemoryProxy": [
-    "proxy.pagingmemory"
-  ],
-  "KitchenSink.view.tab.FramedTabs": [
-    "widget.framed-tabs"
-  ],
-  "ExtThemeNeptune.menu.Menu": [],
-  "Ext.ux.BoxReorderer": [],
-  "KitchenSink.view.grid.RowExpander": [
-    "widget.row-expander-grid"
-  ],
-  "Ext.ux.grid.filter.Filter": [],
-  "KitchenSink.view.dataview.MultiSortButton": [
-    "widget.dataview-multisort-sortbutton"
-  ],
-  "Ext.ux.GroupTabRenderer": [
-    "plugin.grouptabrenderer"
-  ],
+  "Ext.ux.DataView.Animated": [],
+  "Ext.ux.DataView.DragSelector": [],
+  "Ext.ux.DataView.Draggable": [],
+  "Ext.ux.DataView.LabelEditor": [],
   "Ext.ux.FieldReplicator": [],
-  "KitchenSink.view.dd.GridToForm": [
-    "widget.dd-grid-to-form"
-  ],
-  "Ext.ux.grid.filter.ListFilter": [
-    "gridfilter.list"
-  ],
-  "ExtThemeNeptune.panel.Panel": [],
-  "KitchenSink.view.form.Number": [
-    "widget.form-number"
-  ],
-  "KitchenSink.view.tree.TwoTrees": [
-    "widget.tree-two"
-  ],
-  "KitchenSink.view.toolbar.BasicToolbar": [
-    "widget.basic-toolbar"
-  ],
-  "Ext.ux.dd.PanelFieldDragZone": [],
-  "KitchenSink.view.grid.LockingGrid": [
-    "widget.locking-grid"
-  ],
-  "KitchenSink.view.tree.Reorder": [
-    "widget.tree-reorder"
-  ],
-  "ExtThemeNeptune.toolbar.Toolbar": [],
-  "KitchenSink.view.dd.FieldToGrid": [
-    "widget.dd-field-to-grid"
-  ],
-  "ExtThemeNeptune.tab.Tab": [],
-  "KitchenSink.view.ContentPanel": [
-    "widget.contentPanel"
-  ],
-  "KitchenSink.model.grid.Employee": [],
   "Ext.ux.GMapPanel": [
     "widget.gmappanel"
-  ],
-  "KitchenSink.view.grid.SlidingPager": [
-    "widget.sliding-pager"
   ],
   "Ext.ux.GroupTabPanel": [
     "widget.grouptabpanel"
   ],
-  "Ext.ux.DataView.LabelEditor": [],
-  "Ext.ux.grid.filter.StringFilter": [
-    "gridfilter.string"
+  "Ext.ux.GroupTabRenderer": [
+    "plugin.grouptabrenderer"
   ],
-  "Ext.ux.statusbar.ValidationStatus": [],
-  "KitchenSink.model.grid.Office": [],
-  "Ext.ux.layout.Center": [
-    "layout.ux.center"
+  "Ext.ux.IFrame": [
+    "widget.uxiframe"
   ],
-  "KitchenSink.view.Viewport": [],
-  "KitchenSink.model.tree.Task": [],
-  "KitchenSink.data.BigData": [],
-  "Ext.ux.DataView.Animated": [],
-  "KitchenSink.store.BigData": [],
-  "ExtThemeNeptune.resizer.Splitter": [],
-  "KitchenSink.view.tab.IconTabs": [
-    "widget.icon-tabs"
+  "Ext.ux.LiveSearchGridPanel": [],
+  "Ext.ux.PreviewPlugin": [
+    "plugin.preview"
   ],
-  "Ext.ux.statusbar.StatusBar": [
-    "widget.statusbar"
-  ],
-  "KitchenSink.view.tree.XmlTree": [
-    "widget.tree-xml"
-  ],
-  "KitchenSink.view.button.LeftTextButtons": [
-    "widget.left-text-buttons"
-  ],
-  "KitchenSink.view.grid.BigData": [
-    "widget.big-data-grid"
-  ],
-  "KitchenSink.model.grid.Plant": [],
-  "ExtThemeNeptune.layout.component.Dock": [],
-  "KitchenSink.view.slider.SliderField": [
-    "widget.slider-field"
-  ],
-  "KitchenSink.view.button.MenuBottomButtons": [
-    "widget.menu-bottom-buttons"
-  ],
-  "Ext.ux.grid.menu.RangeMenu": [],
-  "KitchenSink.store.States": [],
+  "Ext.ux.ProgressBarPager": [],
   "Ext.ux.RowExpander": [],
-  "KitchenSink.data.DataSets": [],
-  "Ext.ux.event.Player": [],
-  "KitchenSink.model.State": [],
-  "ExtThemeNeptune.panel.Tool": [],
-  "KitchenSink.view.dataview.MultiSort": [
-    "widget.dataview-multisort"
-  ],
-  "KitchenSink.view.form.Checkout": [
-    "widget.form-checkout"
-  ],
-  "KitchenSink.view.layout.Accordion": [
-    "widget.layout-accordion"
-  ],
-  "Ext.ux.ToolbarDroppable": [],
-  "Ext.ux.event.Maker": [],
-  "KitchenSink.view.grid.ProgressBarPager": [
-    "widget.progress-bar-pager"
-  ],
-  "KitchenSink.view.form.FormGrid": [
-    "widget.form-grid"
-  ],
-  "KitchenSink.view.grid.ArrayGrid": [
-    "widget.array-grid"
-  ],
-  "Ext.ux.DataView.Draggable": [],
-  "KitchenSink.view.button.MenuButtons": [
-    "widget.menu-buttons"
-  ],
-  "KitchenSink.view.grid.MultipleSorting": [
-    "widget.multi-sort-grid"
-  ],
-  "KitchenSink.view.tree.CheckTree": [
-    "widget.check-tree"
-  ],
+  "Ext.ux.SlidingPager": [],
+  "Ext.ux.Spotlight": [],
   "Ext.ux.TabCloseMenu": [
     "plugin.tabclosemenu"
   ],
-  "KitchenSink.DummyText": [],
-  "Ext.ux.DataTip": [
-    "plugin.datatip"
+  "Ext.ux.TabReorderer": [],
+  "Ext.ux.TabScrollerMenu": [
+    "plugin.tabscrollermenu"
   ],
-  "Ext.ux.grid.filter.DateTimeFilter": [
-    "gridfilter.datetime"
+  "Ext.ux.ToolbarDroppable": [],
+  "Ext.ux.TreePicker": [
+    "widget.treepicker"
   ],
-  "KitchenSink.view.grid.CellEditing": [
-    "widget.cell-editing"
+  "Ext.ux.ajax.DataSimlet": [],
+  "Ext.ux.ajax.JsonSimlet": [
+    "simlet.json"
+  ],
+  "Ext.ux.ajax.SimManager": [],
+  "Ext.ux.ajax.SimXhr": [],
+  "Ext.ux.ajax.Simlet": [
+    "simlet.basic"
+  ],
+  "Ext.ux.ajax.XmlSimlet": [
+    "simlet.xml"
+  ],
+  "Ext.ux.data.PagingMemoryProxy": [
+    "proxy.pagingmemory"
+  ],
+  "Ext.ux.dd.CellFieldDropZone": [],
+  "Ext.ux.dd.PanelFieldDragZone": [],
+  "Ext.ux.event.Driver": [],
+  "Ext.ux.event.Maker": [],
+  "Ext.ux.event.Player": [],
+  "Ext.ux.event.Recorder": [],
+  "Ext.ux.event.RecorderManager": [
+    "widget.eventrecordermanager"
   ],
   "Ext.ux.form.ItemSelector": [
     "widget.itemselector",
     "widget.itemselectorfield"
   ],
-  "KitchenSink.view.tab.PlainTabs": [
-    "widget.plain-tabs"
+  "Ext.ux.form.MultiSelect": [
+    "widget.multiselect",
+    "widget.multiselectfield"
   ],
-  "KitchenSink.model.Company": [],
-  "Ext.ux.ajax.JsonSimlet": [
-    "simlet.json"
+  "Ext.ux.form.SearchField": [
+    "widget.searchfield"
   ],
-  "Ext.ux.Spotlight": [],
-  "ExtThemeNeptune.form.field.HtmlEditor": [],
   "Ext.ux.grid.FiltersFeature": [
     "feature.filters"
   ],
+  "Ext.ux.grid.TransformGrid": [],
+  "Ext.ux.grid.filter.BooleanFilter": [
+    "gridfilter.boolean"
+  ],
+  "Ext.ux.grid.filter.DateFilter": [
+    "gridfilter.date"
+  ],
+  "Ext.ux.grid.filter.DateTimeFilter": [
+    "gridfilter.datetime"
+  ],
+  "Ext.ux.grid.filter.Filter": [],
+  "Ext.ux.grid.filter.ListFilter": [
+    "gridfilter.list"
+  ],
+  "Ext.ux.grid.filter.NumericFilter": [
+    "gridfilter.numeric"
+  ],
+  "Ext.ux.grid.filter.StringFilter": [
+    "gridfilter.string"
+  ],
+  "Ext.ux.grid.menu.ListMenu": [],
+  "Ext.ux.grid.menu.RangeMenu": [],
+  "Ext.ux.layout.Center": [
+    "layout.ux.center"
+  ],
+  "Ext.ux.statusbar.StatusBar": [
+    "widget.statusbar"
+  ],
+  "Ext.ux.statusbar.ValidationStatus": [],
   "ExtThemeNeptune.Component": [],
+  "ExtThemeNeptune.container.ButtonGroup": [],
+  "ExtThemeNeptune.form.field.HtmlEditor": [],
+  "ExtThemeNeptune.grid.RowEditor": [],
+  "ExtThemeNeptune.grid.column.RowNumberer": [],
+  "ExtThemeNeptune.layout.component.Dock": [],
+  "ExtThemeNeptune.menu.Menu": [],
+  "ExtThemeNeptune.menu.Separator": [],
+  "ExtThemeNeptune.panel.Panel": [],
+  "ExtThemeNeptune.panel.Table": [],
+  "ExtThemeNeptune.panel.Tool": [],
+  "ExtThemeNeptune.picker.Month": [],
+  "ExtThemeNeptune.resizer.Splitter": [],
+  "ExtThemeNeptune.tab.Tab": [],
+  "ExtThemeNeptune.toolbar.Paging": [],
+  "ExtThemeNeptune.toolbar.Toolbar": [],
+  "KitchenSink.DummyText": [],
+  "KitchenSink.controller.Main": [],
+  "KitchenSink.data.BigData": [],
+  "KitchenSink.data.DataSets": [],
+  "KitchenSink.model.Company": [],
+  "KitchenSink.model.Restaurant": [],
+  "KitchenSink.model.State": [],
+  "KitchenSink.model.dd.Simple": [],
+  "KitchenSink.model.grid.Employee": [],
+  "KitchenSink.model.grid.Office": [],
+  "KitchenSink.model.grid.Plant": [],
+  "KitchenSink.model.tree.Task": [],
+  "KitchenSink.store.BigData": [],
+  "KitchenSink.store.Companies": [],
+  "KitchenSink.store.Files": [],
+  "KitchenSink.store.Restaurants": [],
+  "KitchenSink.store.States": [],
+  "KitchenSink.view.CodePreview": [
+    "widget.codePreview"
+  ],
+  "KitchenSink.view.ContentPanel": [
+    "widget.contentPanel"
+  ],
+  "KitchenSink.view.DescriptionPanel": [
+    "widget.descriptionPanel"
+  ],
+  "KitchenSink.view.Header": [
+    "widget.appHeader"
+  ],
+  "KitchenSink.view.Navigation": [
+    "widget.navigation"
+  ],
+  "KitchenSink.view.ThemeSwitcher": [
+    "widget.themeSwitcher"
+  ],
+  "KitchenSink.view.Viewport": [],
+  "KitchenSink.view.button.BasicButtons": [
+    "widget.basic-buttons"
+  ],
+  "KitchenSink.view.button.LeftTextButtons": [
+    "widget.left-text-buttons"
+  ],
+  "KitchenSink.view.button.LinkButtons": [
+    "widget.link-buttons"
+  ],
+  "KitchenSink.view.button.MenuBottomButtons": [
+    "widget.menu-bottom-buttons"
+  ],
+  "KitchenSink.view.button.MenuButtons": [
+    "widget.menu-buttons"
+  ],
+  "KitchenSink.view.button.RightTextButtons": [
+    "widget.right-text-buttons"
+  ],
+  "KitchenSink.view.button.SplitBottomButtons": [
+    "widget.split-bottom-buttons"
+  ],
+  "KitchenSink.view.button.SplitButtons": [
+    "widget.split-buttons"
+  ],
+  "KitchenSink.view.button.ToggleButtons": [
+    "widget.toggle-buttons"
+  ],
+  "KitchenSink.view.dataview.MultiSort": [
+    "widget.dataview-multisort"
+  ],
+  "KitchenSink.view.dataview.MultiSortButton": [
+    "widget.dataview-multisort-sortbutton"
+  ],
+  "KitchenSink.view.dd.FieldToGrid": [
+    "widget.dd-field-to-grid"
+  ],
+  "KitchenSink.view.dd.GridToForm": [
+    "widget.dd-grid-to-form"
+  ],
+  "KitchenSink.view.dd.GridToGrid": [
+    "widget.dd-grid-to-grid"
+  ],
+  "KitchenSink.view.form.Checkout": [
+    "widget.form-checkout"
+  ],
+  "KitchenSink.view.form.ContactForm": [
+    "widget.contact-form"
+  ],
+  "KitchenSink.view.form.Date": [
+    "widget.form-date"
+  ],
+  "KitchenSink.view.form.FormGrid": [
+    "widget.form-grid"
+  ],
+  "KitchenSink.view.form.LoginForm": [
+    "widget.login-form"
+  ],
+  "KitchenSink.view.form.Number": [
+    "widget.form-number"
+  ],
   "KitchenSink.view.form.RegisterForm": [
     "widget.register-form"
   ],
-  "KitchenSink.model.Restaurant": []
+  "KitchenSink.view.grid.ArrayGrid": [
+    "widget.array-grid"
+  ],
+  "KitchenSink.view.grid.BigData": [
+    "widget.big-data-grid"
+  ],
+  "KitchenSink.view.grid.CellEditing": [
+    "widget.cell-editing"
+  ],
+  "KitchenSink.view.grid.GroupedGrid": [
+    "widget.grouped-grid"
+  ],
+  "KitchenSink.view.grid.GroupedHeaderGrid": [
+    "widget.grouped-header-grid"
+  ],
+  "KitchenSink.view.grid.LockingGrid": [
+    "widget.locking-grid"
+  ],
+  "KitchenSink.view.grid.MultipleSorting": [
+    "widget.multi-sort-grid"
+  ],
+  "KitchenSink.view.grid.ProgressBarPager": [
+    "widget.progress-bar-pager"
+  ],
+  "KitchenSink.view.grid.PropertyGrid": [
+    "widget.property-grid"
+  ],
+  "KitchenSink.view.grid.Reconfigure": [
+    "widget.reconfigure-grid"
+  ],
+  "KitchenSink.view.grid.RowExpander": [
+    "widget.row-expander-grid"
+  ],
+  "KitchenSink.view.grid.SlidingPager": [
+    "widget.sliding-pager"
+  ],
+  "KitchenSink.view.layout.Accordion": [
+    "widget.layout-accordion"
+  ],
+  "KitchenSink.view.panel.BasicPanels": [
+    "widget.basic-panels"
+  ],
+  "KitchenSink.view.panel.FramedPanels": [
+    "widget.framed-panels"
+  ],
+  "KitchenSink.view.slider.SliderField": [
+    "widget.slider-field"
+  ],
+  "KitchenSink.view.tab.BasicTabs": [
+    "widget.basic-tabs"
+  ],
+  "KitchenSink.view.tab.FramedTabs": [
+    "widget.framed-tabs"
+  ],
+  "KitchenSink.view.tab.IconTabs": [
+    "widget.icon-tabs"
+  ],
+  "KitchenSink.view.tab.PlainTabs": [
+    "widget.plain-tabs"
+  ],
+  "KitchenSink.view.toolbar.BasicToolbar": [
+    "widget.basic-toolbar"
+  ],
+  "KitchenSink.view.toolbar.DockedToolbars": [
+    "widget.docked-toolbars"
+  ],
+  "KitchenSink.view.tree.BasicTrees": [
+    "widget.basic-trees"
+  ],
+  "KitchenSink.view.tree.CheckTree": [
+    "widget.check-tree"
+  ],
+  "KitchenSink.view.tree.Reorder": [
+    "widget.tree-reorder"
+  ],
+  "KitchenSink.view.tree.TreeGrid": [
+    "widget.tree-grid"
+  ],
+  "KitchenSink.view.tree.TwoTrees": [
+    "widget.tree-two"
+  ],
+  "KitchenSink.view.tree.XmlTree": [
+    "widget.tree-xml"
+  ],
+  "KitchenSink.view.window.BasicWindow": [
+    "widget.basic-window"
+  ]
 });
 Ext.Loader.loadScript("../../../../../packages/ext-theme-neptune/overrides/Component.js");
 Ext.Loader.loadScript("../../../../../packages/ext-theme-neptune/overrides/panel/Panel.js");

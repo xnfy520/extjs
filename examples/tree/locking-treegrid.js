@@ -6,22 +6,25 @@ Ext.require([
     'Ext.data.*',
     'Ext.grid.*',
     'Ext.tree.*',
+    'Ext.tip.*',
     'Ext.ux.CheckColumn'
 ]);
 
-Ext.onReady(function() {
-    Ext.QuickTips.init();
+//we want to setup a model and store instead of using dataUrl
+Ext.define('Task', {
+    extend: 'Ext.data.TreeModel',
+    fields: [
+        {name: 'task',     type: 'string'},
+        {name: 'user',     type: 'string'},
+        {name: 'duration', type: 'string'},
+        {name: 'done',     type: 'boolean'}
+    ]
+});
 
-    //we want to setup a model and store instead of using dataUrl
-    Ext.define('Task', {
-        extend: 'Ext.data.Model',
-        fields: [
-            {name: 'task',     type: 'string'},
-            {name: 'user',     type: 'string'},
-            {name: 'duration', type: 'string'},
-            {name: 'done',     type: 'boolean'}
-        ]
-    });
+Ext.onReady(function() {
+    Ext.tip.QuickTipManager.init();
+
+    
 
     var store = Ext.create('Ext.data.TreeStore', {
         model: 'Task',

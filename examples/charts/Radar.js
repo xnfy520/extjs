@@ -1,5 +1,10 @@
-Ext.require('Ext.chart.*');
-Ext.require(['Ext.Window', 'Ext.fx.target.Sprite', 'Ext.layout.container.Fit', 'Ext.window.MessageBox']);
+Ext.require([
+    'Ext.chart.*',
+    'Ext.Window', 
+    'Ext.fx.target.Sprite', 
+    'Ext.layout.container.Fit', 
+    'Ext.window.MessageBox'
+]);
 
 Ext.onReady(function () {
     
@@ -16,8 +21,6 @@ Ext.onReady(function () {
             },
             tips: {
                 trackMouse: true,
-                width: 100,
-                height: 28,
                 renderer: function(storeItem, item) {
                     this.setTitle(storeItem.get('name') + ': ' + storeItem.get(field));
                 }
@@ -30,27 +33,27 @@ Ext.onReady(function () {
     },
 
     chart = Ext.create('Ext.chart.Chart', {
-            style: 'background:#fff',
-            theme: 'Category2',
-            animate: true,
-            store: store1,
-            insetPadding: 20,
-            legend: {
-                position: 'right'
-            },
-            axes: [{
-                type: 'Radial',
-                position: 'radial',
-                label: {
-                    display: true
-                }
-            }],
-            series: [
-                seriesConfig('data1'),
-                seriesConfig('data2'),
-                seriesConfig('data3')
-            ]
-        });
+        style: 'background:#fff',
+        theme: 'Category2',
+        animate: true,
+        store: store1,
+        insetPadding: 20,
+        legend: {
+            position: 'right'
+        },
+        axes: [{
+            type: 'Radial',
+            position: 'radial',
+            label: {
+                display: true
+            }
+        }],
+        series: [
+            seriesConfig('data1'),
+            seriesConfig('data2'),
+            seriesConfig('data3')
+        ]
+    });
 
     var win = Ext.create('Ext.Window', {
         width: 800,

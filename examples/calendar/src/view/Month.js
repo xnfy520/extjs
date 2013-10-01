@@ -285,7 +285,7 @@ Ext.define('Ext.calendar.view.Month', {
             eventGrid: this.allDayOnly ? this.allDayGrid: this.eventGrid,
             viewStart: this.viewStart,
             tpl: this.getEventTemplate(),
-            maxEventsPerDay: this.maxEventsPerDay,
+            maxEventsPerDay: this.getMaxEventsPerDay(),
             id: this.id,
             templateDataFn: Ext.bind(this.getTemplateEventData, this),
             evtMaxCount: this.evtMaxCount,
@@ -315,41 +315,68 @@ Ext.define('Ext.calendar.view.Month', {
     },
 
     // private
-    getDaySize: function(contentOnly) {
-        var box = this.el.down(this.daySelector).getBox(),
-        w = box.width,
-        h = box.height;
-
-        if (contentOnly) {
-            var hd = this.el.select('.ext-cal-dtitle').first().parent('tr');
-            h = hd ? h - hd.getHeight(true) : h;
+    getDaySize : function(contentOnly){
+        var box = this.el.getBox(),
+            padding = this.getViewPadding(),
+            w = (box.width - padding.width) / this.dayCount,
+            h = (box.height - padding.height) / this.getWeekCount();
+            
+        if(contentOnly){
+            // measure last row instead of first in case text wraps in first row
+            var hd = this.el.select('.ext-cal-dtitle').last().parent('tr');
+            h = hd ? h-hd.getHeight(true) : h;
         }
-        return {
-            height: h,
-            width: w
-        };
+        return {height: h, width: w};
     },
-
+    
     // private
-    getEventHeight: function() {
+    getEventHeight : function() {
         if (!this.eventHeight) {
-            var evt = this.el.down('.ext-cal-evt');
-            this.eventHeight = evt ? evt.parent('tr').getHeight() : 18;
-            var evt = this.el.down('.ext-cal-evr');
-            if (evt) {
-                this.eventHeight = Math.max(this.eventHeight, evt ? evt.parent('tr').getHeight() : 18);
+            var evt = this.el.select('.ext-cal-evt').first();
+            if(evt){
+                this.eventHeight = evt.parent('td').getHeight();
+            }
+            else {
+                return 16; // no events rendered, so try setting this.eventHeight again later
             }
         }
         return this.eventHeight;
     },
-
+    
     // private
-    getMaxEventsPerDay: function() {
+    getMaxEventsPerDay : function(){
         var dayHeight = this.getDaySize(true).height,
-            h = this.getEventHeight(),
-            max = Math.max(Math.floor((dayHeight - h) / h), 0);
-
+            eventHeight = this.getEventHeight(),
+            max = Math.max(Math.floor((dayHeight - eventHeight) / eventHeight), 0);
+        
         return max;
+    },
+    
+    // private
+    getViewPadding: function(sides) {
+        var sides = sides || 'tlbr',
+            top = sides.indexOf('t') > -1,
+            left = sides.indexOf('l') > -1,
+            right = sides.indexOf('r') > -1,
+            height = this.showHeader && top ? this.el.select('.ext-cal-hd-days-tbl').first().getHeight() : 0,
+            width = 0;
+        
+        if (this.isHeaderView) {
+            if (left) {
+                width = this.el.select('.ext-cal-gutter').first().getWidth();
+            }
+            if (right) {
+                width += this.el.select('.ext-cal-gutter-rt').first().getWidth();
+            }
+        }
+        else if (this.showWeekLinks && left) {
+            width = this.el.select('.ext-cal-week-link').first().getWidth();
+        }
+        
+        return {
+            height: height,
+            width: width
+        }
     },
 
     // private

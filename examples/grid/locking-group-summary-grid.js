@@ -3,7 +3,8 @@ Ext.require([
     'Ext.data.*',
     'Ext.form.field.Number',
     'Ext.form.field.Date',
-    'Ext.tip.QuickTipManager'
+    'Ext.tip.QuickTipManager',
+    'Ext.layout.container.Fit'
 ]);
 
 Ext.define('Task', {
@@ -169,4 +170,5 @@ Ext.onReady(function(){
             summaryRenderer: Ext.util.Format.usMoney
         }]
     });
+    
 });

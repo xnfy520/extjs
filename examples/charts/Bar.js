@@ -1,8 +1,12 @@
-Ext.require('Ext.chart.*');
-Ext.require(['Ext.Window', 'Ext.fx.target.Sprite', 'Ext.layout.container.Fit', 'Ext.window.MessageBox']);
+Ext.require([
+    'Ext.chart.*',
+    'Ext.Window', 
+    'Ext.fx.target.Sprite', 
+    'Ext.layout.container.Fit', 
+    'Ext.window.MessageBox'
+]);
 
 Ext.onReady(function () {
-    var textArea;
     
     Ext.define('Ext.chart.theme.CustomBlue', {
         extend: 'Ext.chart.theme.Base',
@@ -30,64 +34,62 @@ Ext.onReady(function () {
     });
     
     var chart = Ext.create('Ext.chart.Chart', {
-            animate: true,
-            shadow: true,
-            store: store1,
-            axes: [{
-                type: 'Numeric',
-                position: 'bottom',
-                fields: ['data1'],
-                label: {
-                    renderer: Ext.util.Format.numberRenderer('0,0')
-                },
-                title: 'Number of Hits',
-                grid: true,
-                minimum: 0
-            }, {
-                type: 'Category',
-                position: 'left',
-                fields: ['name'],
-                title: 'Month of the Year'
-            }],
-            theme: 'CustomBlue',
-            background: {
-              gradient: {
+        animate: true,
+        shadow: true,
+        store: store1,
+        axes: [{
+            type: 'Numeric',
+            position: 'bottom',
+            fields: ['data1'],
+            label: {
+                renderer: Ext.util.Format.numberRenderer('0,0')
+            },
+            title: 'Number of Hits',
+            grid: true,
+            minimum: 0
+        }, {
+            type: 'Category',
+            position: 'left',
+            fields: ['name'],
+            title: 'Month of the Year'
+        }],
+        theme: 'CustomBlue',
+        background: {
+            gradient: {
                 id: 'backgroundGradient',
                 angle: 45,
                 stops: {
-                  0: {
-                    color: '#ffffff'
-                  },
-                  100: {
-                    color: '#eaf1f8'
-                  }
+                    0: {
+                        color: '#ffffff'
+                    },
+                    100: {
+                        color: '#eaf1f8'
+                    }
                 }
-              }
-            },
-            series: [{
-                type: 'bar',
-                axis: 'bottom',
-                highlight: true,
-                tips: {
-                  trackMouse: true,
-                  width: 140,
-                  height: 28,
-                  renderer: function(storeItem, item) {
+            }
+        },
+        series: [{
+            type: 'bar',
+            axis: 'bottom',
+            highlight: true,
+            tips: {
+                trackMouse: true,
+                renderer: function(storeItem, item) {
                     this.setTitle(storeItem.get('name') + ': ' + storeItem.get('data1') + ' views');
-                  }
-                },
-                label: {
-                  display: 'insideEnd',
-                    field: 'data1',
-                    renderer: Ext.util.Format.numberRenderer('0'),
-                    orientation: 'horizontal',
-                    color: '#333',
-                  'text-anchor': 'middle'
-                },
-                xField: 'name',
-                yField: ['data1']
-            }]
-        });
+                }
+            },
+            label: {
+              display: 'insideEnd',
+                  field: 'data1',
+                  renderer: Ext.util.Format.numberRenderer('0'),
+                  orientation: 'horizontal',
+                  color: '#333',
+                'text-anchor': 'middle'
+            },
+            xField: 'name',
+            yField: ['data1']
+        }]
+    });
         
     var win = Ext.create('Ext.window.Window', {
         width: 800,

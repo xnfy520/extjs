@@ -1,53 +1,54 @@
 Ext.require([
     'Ext.data.*',
     'Ext.grid.*',
+    'Ext.tip.*',
     'Ext.tree.*'
 ]);
 
-Ext.onReady(function() {
-    Ext.QuickTips.init();
+Ext.define('Post', {
+    extend: 'Ext.data.TreeModel',
+    idProperty: 'postid',
+    fields: [{
+        name: "title",
+        convert: undefined
+    }, {
+        name: "threadid",
+        convert: undefined
+    }, {
+        name: "username",
+        convert: undefined
+    }, {
+        name: "userid",
+        convert: undefined
+    },  {
+        name: "dateline",
+        type: 'date',
+        dateFormat: 'timestamp'
+    }, {
+        name: "postid",
+        convert: undefined
+    }, {
+        name: "forumtitle",
+        convert: undefined
+    }, {
+        name: "forumid",
+        convert: undefined
+    }, {
+        name: "replycount",
+        type: 'int',
+        convert: undefined
+    }, {
+        name: "lastpost",
+        dateFormat: 'timestamp',
+        convert: undefined
+    }, {
+        name: "excerpt",
+        convert: undefined
+    }]
+});
 
-    Ext.define('Post', {
-        extend: 'Ext.data.Model',
-        idProperty: 'postid',
-        fields: [{
-            name: "title",
-            convert: undefined
-        }, {
-            name: "threadid",
-            convert: undefined
-        }, {
-            name: "username",
-            convert: undefined
-        }, {
-            name: "userid",
-            convert: undefined
-        },  {
-            name: "dateline",
-            type: 'date',
-            dateFormat: 'timestamp'
-        }, {
-            name: "postid",
-            convert: undefined
-        }, {
-            name: "forumtitle",
-            convert: undefined
-        }, {
-            name: "forumid",
-            convert: undefined
-        }, {
-            name: "replycount",
-            type: 'int',
-            convert: undefined
-        }, {
-            name: "lastpost",
-            dateFormat: 'timestamp',
-            convert: undefined
-        }, {
-            name: "excerpt",
-            convert: undefined
-        }]
-    });
+Ext.onReady(function() {
+    Ext.tip.QuickTipManager.init();
 
     function renderTitle(value, p, record) {
         return value ? Ext.String.format(

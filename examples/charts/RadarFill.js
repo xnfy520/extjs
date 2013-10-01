@@ -1,51 +1,56 @@
-Ext.require('Ext.chart.*');
-Ext.require(['Ext.Window', 'Ext.fx.target.Sprite', 'Ext.layout.container.Fit', 'Ext.window.MessageBox']);
+Ext.require([
+    'Ext.chart.*',
+    'Ext.Window', 
+    'Ext.fx.target.Sprite', 
+    'Ext.layout.container.Fit', 
+    'Ext.window.MessageBox'
+]);
 
 Ext.onReady(function () {
     store1.loadData(generateData());
 
     var chart = Ext.create('Ext.chart.Chart', {
-            style: 'background:#fff',
-            theme: 'Category2',
-            insetPadding: 20,
-            animate: true,
-            store: store1,
-            legend: {
-                position: 'right'
-            },
-            axes: [{
-                type: 'Radial',
-                position: 'radial',
-                label: {
-                    display: true
-                }
-            }],
-            series: [{
-                showInLegend: true,
-                type: 'radar',
-                xField: 'name',
-                yField: 'data1',
-                style: {
-                    opacity: 0.4
-                }
-            },{
-                showInLegend: true,
-                type: 'radar',
-                xField: 'name',
-                yField: 'data2',
-                style: {
-                    opacity: 0.4
-                }
-            },{
-                showInLegend: true,
-                type: 'radar',
-                xField: 'name',
-                yField: 'data3',
-                style: {
-                    opacity: 0.4
-                }
-            }]
-        });
+        style: 'background:#fff',
+        theme: 'Category2',
+        insetPadding: 20,
+        animate: true,
+        store: store1,
+        legend: {
+            position: 'right'
+        },
+        axes: [{
+            type: 'Radial',
+            position: 'radial',
+            label: {
+                display: true
+            }
+        }],
+        series: [{
+            showInLegend: true,
+            type: 'radar',
+            xField: 'name',
+            yField: 'data1',
+            style: {
+                opacity: 0.4
+            }
+        },{
+            showInLegend: true,
+            type: 'radar',
+            xField: 'name',
+            yField: 'data2',
+            style: {
+                opacity: 0.4
+            }
+        },{
+            showInLegend: true,
+            type: 'radar',
+            xField: 'name',
+            yField: 'data3',
+            style: {
+                opacity: 0.4
+            }
+        }]
+    });
 
     var win = Ext.create('Ext.Window', {
         width: 800,

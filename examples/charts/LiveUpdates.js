@@ -63,7 +63,7 @@ Ext.onReady(function () {
             chart.markerIndex = markerIndex;
         }
         store.loadData(gs);
-    }, 100);
+    }, 300);
 
     var win = Ext.create('Ext.window.Window', {
         width: 800,

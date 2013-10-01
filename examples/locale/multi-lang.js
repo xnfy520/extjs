@@ -6,7 +6,6 @@ Ext.require([
     'Ext.data.*',
     'Ext.tip.QuickTipManager',
     'Ext.form.*',
-    'Ext.ux.data.PagingMemoryProxy',
     'Ext.grid.Panel'
 ]);
 
@@ -43,10 +42,12 @@ Ext.onReady(function(){
                         }
                     }
                 });
+                
+                var record, url;
         
                 if (params.lang) {
                     // check if there's really a language with that language code
-                    var record = store.findRecord('code', params.lang, null, null, null, true);
+                    record = store.findRecord('code', params.lang, null, null, null, true);
                     // if language was found in store assign it as current value in combobox
                     if (record) {
                         combo.setValue(record.data.language);
@@ -54,8 +55,9 @@ Ext.onReady(function(){
                 }            
             
                 if (params.lang) {
-                    var record = store.findRecord('code', params.lang, null, null, null, true),
-                        url = Ext.util.Format.format("../../locale/ext-lang-{0}.js", params.lang);
+                    record = store.findRecord('code', params.lang, null, null, null, true);
+                    url = Ext.util.Format.format("../../locale/ext-lang-{0}.js", params.lang);
+                    
                     Ext.Loader.injectScriptElement(
                         url,
                         this.onSuccess,
@@ -83,7 +85,7 @@ Ext.onReady(function(){
                     labelWidth: 100, // label settings here cascade unless overridden
                     frame: true,
                     title: 'Email Field',
-                    bodyStyle: 'padding:5px 5px 0',
+                    bodyPadding: '5 5 0',
                     width: width,
                     defaults: {
                         msgTarget: 'side',
@@ -103,7 +105,7 @@ Ext.onReady(function(){
                     labelWidth: 100, // label settings here cascade unless overridden
                     frame: true,
                     title: 'Datepicker',
-                    bodyStyle: 'padding:5px 5px 0',
+                    bodyPadding: '5 5 0',
                     width: width,
                     defaults: {
                         msgTarget: 'side',
@@ -123,7 +125,8 @@ Ext.onReady(function(){
                      remoteSort: true,
                      pageSize: 6,
                      proxy: {
-                         type: 'pagingmemory',
+                         type: 'memory',
+                         enablePaging: true,
                          data: monthArray,
                          reader: {
                              type: 'array'

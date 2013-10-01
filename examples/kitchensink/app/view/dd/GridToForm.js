@@ -108,7 +108,7 @@ Ext.define('KitchenSink.view.dd.GridToForm', {
         this.down('form').getForm().reset();
     },
     
-    afterFirstLayout: function(){
+    onBoxReady: function(){
         this.callParent(arguments);
         var form = this.down('form'),
             body = form.body;

@@ -5,50 +5,51 @@ Ext.onReady(function () {
     store1.loadData(generateData(8));
 
     var chart = Ext.create('Ext.chart.Chart', {
-            style: 'background:#fff',
-            animate: true,
-            theme: 'Category1',
-            store: store1,
-            axes: [{
-                type: 'Numeric',
-                position: 'left',
-                fields: ['data1', 'data2', 'data3'],
-                title: 'Number of Hits',
-                grid: true
-            }, {
-                type: 'Category',
-                position: 'bottom',
-                fields: ['name'],
-                title: 'Month of the Year'
-            }],
-            series: [{
-                type: 'column',
-                axis: 'left',
-                xField: 'name',
-                yField: 'data1',
-                markerConfig: {
-                    type: 'cross',
-                    size: 3
-                }
-            }, {
-                type: 'scatter',
-                axis: 'left',
-                xField: 'name',
-                yField: 'data2',
-                markerConfig: {
-                    type: 'circle',
-                    size: 5
-                }
-            }, {
-                type: 'line',
-                axis: 'left',
-                smooth: true,
-                fill: true,
-                fillOpacity: 0.5,
-                xField: 'name',
-                yField: 'data3'
-            }]
-        });
+        style: 'background:#fff',
+        animate: true,
+        theme: 'Category1',
+        store: store1,
+        axes: [{
+            type: 'Numeric',
+            position: 'left',
+            fields: ['data1', 'data2', 'data3'],
+            title: 'Number of Hits',
+            grid: true
+        }, {
+            type: 'Category',
+            position: 'bottom',
+            fields: ['name'],
+            title: 'Month of the Year'
+        }],
+        series: [{
+            type: 'column',
+            axis: 'left',
+            xField: 'name',
+            yField: 'data1',
+            markerConfig: {
+                type: 'cross',
+                size: 3
+            }
+        }, {
+            type: 'scatter',
+            axis: 'left',
+            xField: 'name',
+            yField: 'data2',
+            markerConfig: {
+                type: 'circle',
+                size: 5
+            }
+        }, {
+            type: 'line',
+            axis: 'left',
+            smooth: true,
+            fill: true,
+            fillOpacity: 0.5,
+            xField: 'name',
+            yField: 'data3'
+        }]
+    }); 
+
  
 
     var win = Ext.create('Ext.Window', {

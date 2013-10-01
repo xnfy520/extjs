@@ -1,5 +1,10 @@
-Ext.require('Ext.chart.*');
-Ext.require(['Ext.layout.container.Fit', 'Ext.window.MessageBox']);
+Ext.require([
+    'Ext.chart.*',
+    'Ext.Window', 
+    'Ext.fx.target.Sprite', 
+    'Ext.layout.container.Fit', 
+    'Ext.window.MessageBox'
+]);
 
 Ext.onReady(function () {
     var store = Ext.create('Ext.data.JsonStore', {
@@ -12,47 +17,45 @@ Ext.onReady(function () {
               ]
     });
 
-    var chart = Ext.create('Ext.chart.Chart',{
-            animate: true,
-            shadow: true,
-            store: store,
-            legend: {
-                position: 'right'
-            },
-            axes: [{
-                type: 'Numeric',
-                position: 'bottom',
-                fields: ['comedy', 'action', 'drama', 'thriller'],
-                title: false,
-                grid: true,
-                label: {
-                    renderer: function(v) {
-                        return String(v).replace(/(.)00000$/, '.$1M');
-                    }
+    var chart = Ext.create('Ext.chart.Chart', {
+        animate: true,
+        shadow: true,
+        store: store,
+        legend: {
+            position: 'right'
+        },
+        axes: [{
+            type: 'Numeric',
+            position: 'bottom',
+            fields: ['comedy', 'action', 'drama', 'thriller'],
+            title: false,
+            grid: true,
+            label: {
+                renderer: function(v) {
+                    return String(v).replace(/(.)00000$/, '.$1M');
                 }
-            }, {
-                type: 'Category',
-                position: 'left',
-                fields: ['year'],
-                title: false
-            }],
-            series: [{
-                type: 'bar',
-                axis: 'bottom',
-                gutter: 80,
-                xField: 'year',
-                yField: ['comedy', 'action', 'drama', 'thriller'],
-                stacked: true,
-                tips: {
-                    trackMouse: true,
-                    width: 65,
-                    height: 28,
-                    renderer: function(storeItem, item) {
-                        this.setTitle(String(item.value[1] / 1000000) + 'M');
-                    }
+            }
+        }, {
+            type: 'Category',
+            position: 'left',
+            fields: ['year'],
+            title: false
+        }],
+        series: [{
+            type: 'bar',
+            axis: 'bottom',
+            gutter: 80,
+            xField: 'year',
+            yField: ['comedy', 'action', 'drama', 'thriller'],
+            stacked: true,
+            tips: {
+                trackMouse: true,
+                renderer: function(storeItem, item) {
+                    this.setTitle(String(item.value[1] / 1000000) + 'M');
                 }
-            }]
-        });
+            }
+        }]
+    });
 
 
     var panel1 = Ext.create('widget.panel', {

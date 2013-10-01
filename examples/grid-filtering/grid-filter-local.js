@@ -31,7 +31,10 @@ Ext.define('Product', {
     }]
 });
 
-Ext.onReady(function(){
+Ext.onReady(function() {
+
+    // setup the state provider, all state information will be saved to a cookie
+    Ext.state.Manager.setProvider(Ext.create('Ext.state.CookieProvider'));
 
     Ext.ux.ajax.SimManager.init({
         delay: 300,
@@ -162,6 +165,8 @@ Ext.onReady(function(){
     };
     
     var grid = Ext.create('Ext.grid.Panel', {
+        stateful: true,
+        stateId: 'stateful-filter-grid',
         border: false,
         store: store,
         columns: createColumns(4),

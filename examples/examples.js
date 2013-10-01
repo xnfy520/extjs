@@ -843,6 +843,12 @@ Ext.samples = {
                     "desc": "An example of the Number field, with and without a spinner."
                 },
                 {
+                    "text": "Date Picker",
+                    "url": "build/KitchenSink/ext-theme-neptune/#form-date",
+                    "icon": "form-date.png",
+                    "desc": "An example of using standalone date/month pickers."
+                },
+                {
                     "text": "MultiSelect and ItemSelector",
                     "url": "multiselect/multiselect-demo.html",
                     "icon": "form-multiselect.png",

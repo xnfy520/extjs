@@ -1,4 +1,9 @@
-Ext.require(['Ext.chart.*', 'Ext.chart.axis.Gauge', 'Ext.chart.series.*', 'Ext.Window']);
+Ext.require([
+    'Ext.chart.*',
+    'Ext.window.Window', 
+    'Ext.fx.target.Sprite', 
+    'Ext.layout.container.Fit'
+]);
 
 Ext.onReady(function () {
 
@@ -7,6 +12,7 @@ Ext.onReady(function () {
         height: 250,
         minWidth: 650,
         minHeight: 225,
+        autoShow: true,
         title: 'Gauge Charts',
         tbar: [{
             text: 'Reload Data',
@@ -93,6 +99,6 @@ Ext.onReady(function () {
                 colorSet: ['#3AA8CB', '#ddd']
             }]
         }]
-    }).show();
+    });
     
 });
